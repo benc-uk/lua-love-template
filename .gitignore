@@ -1,2 +1,2 @@
-builds/*.love
-builds/*.exe
+dist/*.love
+dist/*.exe

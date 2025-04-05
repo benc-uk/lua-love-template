@@ -13,7 +13,7 @@ if (-Not $lovePath) {
     Write-Host "love.exe not found in PATH. Please ensure Love2D is installed and added to your PATH."
     exit 1
 }
-echo "Using love.exe from: $($lovePath.Path)"
+echo "💾 Found love.exe in: $($lovePath.Path)"
 
 # Check if srcPath and outputPath are provided
 if (-Not $srcPath -or -Not $outputPath) {
@@ -23,7 +23,7 @@ if (-Not $srcPath -or -Not $outputPath) {
 
 # Check if srcPath exists
 if (-Not (Test-Path $srcPath)) {
-    Write-Host "Game path does not exist: $srcPath"
+    Write-Host "Source path does not exist: $srcPath"
     exit 1
 }
 
@@ -36,9 +36,13 @@ if (-Not (Test-Path $outputPath)) {
 $zipFileName = Join-Path $outputPath "out.love"
 $exeFileName = Join-Path $outputPath "out.exe"
 
-echo "Compressing src folder to $zipFileName"
+echo "📚 Compressing project to: $zipFileName"
 Compress-Archive -Path $srcPath\* -DestinationPath $zipFileName -Force
 
 # Copy love.exe together with the .love file
-echo "Building executable $exeFileName"
+echo "🔨 Building executable: $exeFileName"
 Get-Content $lovePath.Path,$zipFileName -AsByteStream | Set-Content $exeFileName -AsByteStream -Force
+
+# Show the size of the executable in MB rounded to 2 decimal places
+$size = "{0:N2} MB" -f ((Get-Item $exeFileName).length / 1MB)
+echo "📦 Build complete! Size: $(${size})"
