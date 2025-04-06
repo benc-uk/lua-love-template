@@ -4,20 +4,22 @@
     {
       "type": "lua-local",
       "request": "launch",
-      "name": "Debug",
+      "name": "Debug Love",
       "program": {
         "command": "love"
       },
-      "args": ["./src/", "debug"]
+      "args": ["src", "debug"],
+      "scriptRoots": ["src"]
     },
     {
       "type": "lua-local",
       "request": "launch",
-      "name": "Release",
+      "name": "Release Love",
       "program": {
         "command": "love"
       },
-      "args": ["./src/"]
+      "args": ["src"],
+      "scriptRoots": ["src"]
     }
   ]
 }

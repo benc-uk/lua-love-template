@@ -26,8 +26,9 @@ This repository is a template for creating Love2D projects with Visual Studio Co
 
   Libraries included in the `src/lib/` directory, under the terms of their MIT license
 
-  - [rxi/lume](https://github.com/rxi/lume)
-  - [rxi/json.lua](https://github.com/rxi/json.lua)
+  - [rxi/lume](https://github.com/rxi/lume) A host of useful game dev functions
+  - [rxi/json.lua](https://github.com/rxi/json.lua) JSON parsing
+  - [kikito/inspect.lua](https://github.com/kikito/inspect.lua) This library transforms any Lua value into a human-readable representation
 
 ## Getting Started
 
