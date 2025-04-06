@@ -19,7 +19,15 @@ This repository is a template for creating Love2D projects with Visual Studio Co
   - A PowerShell script to package your Love2D project into a `.love` file and a Windows executable.
 
 - **Example project**:
+
   - A simple "Hello World" Love2D project
+
+- **Included libraries**:
+
+  Libraries included in the `src/lib/` directory, under the terms of their MIT license
+
+  - [rxi/lume](https://github.com/rxi/lume)
+  - [rxi/json.lua](https://github.com/rxi/json.lua)
 
 ## Getting Started
 
