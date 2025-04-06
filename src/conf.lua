@@ -7,3 +7,7 @@ if IS_DEBUG then
     error(msg, 2)
   end
 end
+
+function love.conf(conf)
+  conf.window.title = "Hello World!"
+end

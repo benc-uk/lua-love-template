@@ -1,6 +1,4 @@
 function love.load()
-  love.window.setTitle("Hello World!")
-
   CatImg = love.graphics.newImage("assets/cat.png")
   Time = 0
 end
