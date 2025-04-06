@@ -12,7 +12,7 @@ This repository is a template for creating Love2D projects with Visual Studio Co
 
 - **Debugging support**:
 
-  - Automatically enables the debugger when running in debug mode.
+  - Automatically enables the 'Lua Local' debugger when running in debug mode.
 
 - **Build tools**:
 
@@ -24,7 +24,7 @@ This repository is a template for creating Love2D projects with Visual Studio Co
 
 - **Included libraries**:
 
-  Libraries included in the `src/lib/` directory, under the terms of their MIT license
+  Libraries included in the `src/lib/` directory, under the terms of their respective MIT licenses:
 
   - [rxi/lume](https://github.com/rxi/lume) A host of useful game dev functions
   - [rxi/json.lua](https://github.com/rxi/json.lua) JSON parsing
